@@ -48,7 +48,7 @@ const Clients = () => {
 
   return (
     <section className="section section-md bg-left" id="testimonials">
-      <div className="bg-item hidden sm:flex bg-image animated fadeInLeftBig"
+      <div className="bg-item client-background hidden sm:flex bg-image animated fadeInLeftBig"
       data-aos="fade-right"
       data-aos-anchor-placement="center-bottom">
         <img src="images/bg-pattern-1.jpg" alt="" />
@@ -57,36 +57,38 @@ const Clients = () => {
         <div className="row">
           <div className="col-md-6 animated ">
             <div className="swiper-separate-container">
-              <div className="w-[27rem] h-[26rem] overflow-hidden bg-white p-4" data-aos="fade-left"
-              data-aos-anchor-placement="center-bottom">
-                {/* Card Slide */}
-                <div className="swiper-slide">
-                  <blockquote className="quote">
-                    <q className="quote-text h4">
-                      {testimonials[currentSlide].quote}
-                    </q>
-                    <div className="flex gap-4 pt-6 pb-12">
-                      <img
+            <div className="client-object w-full h-[26rem] overflow-hidden bg-[#fdf7f1] p-4">
+        {/* Overlay */}
+        <div className="client-slider"></div>
+
+        {/* Card Slide */}
+        <div className="swiper-slide">
+            <blockquote className="quote">
+                <q className="quote-text font-thin italic text-[17px] sm:text-[25px] text-black">
+                    {testimonials[currentSlide].quote}
+                </q>
+                <div className="flex gap-4 pt-6 pb-12">
+                    <img
                         className="rounded-full"
                         src={testimonials[currentSlide].img}
                         alt={testimonials[currentSlide].author}
                         width="67"
                         height="67"
-                      />
-                      <div className="quote-author-body">
+                    />
+                    <div className="quote-author-body">
                         <div className="quote-author-name h4">
-                          <cite className="text-red-500">
-                            {testimonials[currentSlide].author}
-                          </cite>
+                            <cite className="text-red-500">
+                                {testimonials[currentSlide].author}
+                            </cite>
                         </div>
                         <div className="quote-author-meta h6">
-                          {testimonials[currentSlide].role}
+                            {testimonials[currentSlide].role}
                         </div>
-                      </div>
                     </div>
-                  </blockquote>
                 </div>
-              </div>
+            </blockquote>
+        </div>
+    </div>
 
               {/* Navigation Buttons */}
               <div className="swiper-separate-navigation">

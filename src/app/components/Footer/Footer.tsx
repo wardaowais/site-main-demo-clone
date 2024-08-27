@@ -19,24 +19,27 @@ const Footer = () => {
       <section className="footer footer-top context-dark bg-800">
         <div className="row justify-content-center justify-content-lg-start">
           <div className="col-sm-6 col-xxl-5">
-            <div className="image-social">
-              <a className="image-social-icon " href="#"></a>
-              <img
-                className="image"
-                src="images/image-11-787x516.jpg"
-                alt=""
-                width="787"
-                height="516"
-              />
-            </div>
+          <div className="relative image-social">
+  <a className="absolute right-0 top-0 image-social-icon" href="#">
+    <div className="hover:bg-gray-100 bg-red-500 p-4">
+      <FaFacebookMessenger className="text-slate-200" size={30} />
+    </div>
+  </a>
+  <img
+    className="image"
+    src="images/image-11-787x516.jpg"
+    alt=""
+    width="787"
+    height="516"
+  />
+</div>
+
           </div>
           <div className="col-md-10 col-lg-6 col-xl-5 col-xxl-3 offset-xxl-1">
             <div className="footer-inner">
               <div className="logo">
                 <div className="relative " href="index.html">
-                  <div className="absolute -left-[7.7rem] -top-[3.8rem]  hover:bg-gray-100 bg-red-500 p-4">
-                    <FaFacebookMessenger className="text-slate-200" size={30} />
-                  </div>
+                  
 
                   <div className="text-white">
                     <div className=" navbar-panel">
@@ -71,7 +74,7 @@ const Footer = () => {
                 data-animate=""
                 noValidate="novalidate"
               >
-                <div className="form-group">
+                <div className="form-group  w-full">
                   <input
                     className="mt-4 form-control form-control-sm form-control-has-validation form-control-last-child"
                     type="email"

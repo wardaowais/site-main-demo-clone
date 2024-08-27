@@ -68,9 +68,9 @@ const Header = () => {
           <div className="w-full flex justify-between items-center pt-16 pb-5">
             <div className="navbar-panel hidden lg:flex">
               <div className="navbar-cell navbar-subpanel-contact w-[60px] h-[300px] mr-5">
-                <div className={scrollY > 100 ? "contact-btn-fixed" : "navbar-contact"}>
+                <div className={scrollY > 100 ? "contact-btn-fixed"  : "navbar-contact"}>
                   <button
-                    className={`rd-navbar-fullwidth navbar-contact-btn ${isActive ? "active" : ""}`}
+                    className={`rd-navbar-fullwidth  navbar-contact-btn ${isActive ? "active" : ""}`}
                     onClick={toggleNewsletter2}
                   >
                     <span></span>
@@ -131,7 +131,7 @@ const Header = () => {
                     key={item.path}
                   >
                     <Link
-                      className={`navbar-navigation-root-link pb-3 ${activeSection === item.path ? "border-b-[3px] border-orange" : ""}`}
+                      className={`navbar-navigation-root-link pb-3 ${activeSection === item.path ? "border-b border-orange" : ""}`}
                       href={item.path}
                     >
                       {item.name}
@@ -220,8 +220,8 @@ const Header = () => {
           </div>
         )}
         {showNewsletter2 && (
-          <div className="absolute top-20 left-0 w-full bg-[#b9e1d7] py-5 transition-all duration-500 ease-in-out shadow-lg z-40">
-            <div className="text-center font-semibold text-lg mb-4">Join My Newsletter</div>
+          <div className="absolute top-0 left-0 w-[344px] h-[ 308px] bg-orange py-5 transition-all duration-500 ease-in-out shadow-lg z-40">
+            <div className="text-center font-semibold text-lg mb-4">Join My NewsLetter</div>
             <form className="flex justify-center">
               <input
                 className="border rounded-l-lg px-4 py-2 w-64 focus:outline-none"
