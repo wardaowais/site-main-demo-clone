@@ -19,24 +19,29 @@ const AboutUs = () => {
       className="section section-md bg-left-1 text-center text-sm-left "
       id="about-me"
     >
+      
       <div className="bg-item   overflow-hidden hidden md:flex" data-animate="">
       
-        <img src="images/bg-pattern-1.jpg" data-aos="fade-right"
+        <img src="images/bg-pattern-1.jpg"  className="w-[455px]" data-aos="fade-right"
               data-aos-anchor-placement="center-bottom"  alt="" />
       </div>
       <div className="container ">
         <div className="row row-30 ">
           <div className="col-sm-6 ">
-            <div className=" " data-animate="" data-aos="fade-right"
-              data-aos-anchor-placement="center-bottom">
-              <img
-                className="image"
-                src="images/image-01-424x491.jpg"
-                alt=""
-                width="424"
-                height="491"
-              />
-            </div>
+          <div className="relative" data-animate="" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+  <div className="bg-black w-[200px] h-[200px] absolute bottom-30 z-10">
+  
+  </div>
+  <img
+    className="image"
+    src="images/image-01-424x491.jpg"
+    alt=""
+    width="424"
+    height="491"
+    style={{ zIndex: 20, position: 'relative' }}
+  />
+</div>
+
           </div>
           <div className="col-sm-6" data-aos="fade-in"
               data-aos-anchor-placement="center-bottom"  data-animate="">

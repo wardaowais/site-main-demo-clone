@@ -139,7 +139,7 @@ const LatestWorks = () => {
                     className="min-w-[33.33%] sm:w-48 "
                     // style={{ minWidth: "33.33%" }} // Ensure 3 items in one row
                   >
-                    <div className="w-96 p-3 sm:p-4 ">
+                    <div className="w-96 mobile-latest p-3 sm:p-4 ">
                       <div className="thumbnail-media">
                         <img
                           className="w-full"
